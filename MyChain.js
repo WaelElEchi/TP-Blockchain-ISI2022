@@ -26,3 +26,14 @@ class Blockchain {
     this.blockchain.push(new Block(data, this.getLastBlock().hash));
   }
 }
+
+myChain = new Blockchain();
+console.log("\n-----\nNew blockchain created");
+console.log(myChain);
+
+myChain.createBlock("first set of transaction data");
+console.log("\n-----\nAdded a block");
+console.log(myChain);
+myChain.createBlock("another set of transaction data");
+console.log("\n-----\nAdded another block");
+console.log(myChain);
