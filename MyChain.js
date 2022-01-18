@@ -40,14 +40,14 @@ class Blockchain {
 }
 
 myChain = new Blockchain();
-console.log("\n-----\nNew blockchain created");
+console.log("\n--------\nNew blockchain created");
 console.log(myChain);
 
 myChain.createBlock("first set of transaction data");
-console.log("\n-----\nAdded a block");
+console.log("\n--------\nAdded a block");
 console.log(myChain);
 myChain.createBlock("another set of transaction data");
-console.log("\n-----\nAdded another block");
+console.log("\n---------\nAdded another block");
 console.log(myChain);
 
 console.log("Is the chain valid: " + myChain.isBlockchainValid());
